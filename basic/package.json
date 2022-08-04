@@ -11,6 +11,6 @@
   },
   "scripts": {
     "start": "parcel src/index.html --dist-dir ./temp --cache-dir .parcel-cache",
-    "build": "parcel build ./src/index.html --no-cache --cache-dir .parcel-cache --public-url ./"
+    "build": "parcel build src/index.html --cache-dir .parcel-cache --public-url ./ --dist-dir build"
   }
 }

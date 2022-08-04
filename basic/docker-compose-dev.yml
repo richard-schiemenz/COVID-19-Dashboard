@@ -1,0 +1,9 @@
+services:
+  react-app:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - '1234:1234'
+    volumes:
+      - ./src:/app/src

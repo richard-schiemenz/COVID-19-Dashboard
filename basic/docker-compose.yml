@@ -1,0 +1,4 @@
+# Compose File for all Workflows
+services:
+  react-app:
+
