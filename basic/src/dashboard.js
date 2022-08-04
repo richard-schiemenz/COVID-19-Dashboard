@@ -30,8 +30,8 @@ export default class Dashboard extends React.Component {
   }
   
   //Pull data from API
-  getData = async (state_level) => {
-    const response = await fetch(state_level
+  getData = async (data_on_state_level) => {
+    const response = await fetch(data_on_state_level
       ? this.state.data[0].url
       : this.state.data[1].url);
      //extract JSON from the http response
@@ -43,7 +43,7 @@ export default class Dashboard extends React.Component {
     //get Data for new state
     this.getData(!this.state.data_on_state_level)
     this.setState((state) =>{
-      return{state_level:!state.state_level}
+      return{data_on_state_level:!state.data_on_state_level}
     });
   }
 
