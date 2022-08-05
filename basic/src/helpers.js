@@ -13,7 +13,7 @@ export let config = {
   responsive: true,
   displaylogo: false,
   doubleClick: "reset",
-  scrollZoom: false,
+  scrollZoom: true,
   modeBarButtonsToRemove: ["autoscale", "pan2d", "select2d", "lasso2d"],
   dragmode: true,
 };

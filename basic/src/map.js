@@ -11,10 +11,9 @@ export default class Map extends React.Component {
 
 
 
-    render(){  
-      console.log(this.props.features)
+    render(){ 
     return (
-        <div className="">
+        <div className="col d-flex justify-content-center">
         <Plot
           className="plot"
           style={{ display: "inline" }}
@@ -37,7 +36,7 @@ export default class Map extends React.Component {
             mapbox: {
               style: "carto-positron",
               center: { lat: 51.3, lon: 10.45 },
-              zoom: 4,
+              zoom: 5,
             },
             margin: {
               l: 0,

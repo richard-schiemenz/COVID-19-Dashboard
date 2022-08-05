@@ -49,8 +49,8 @@ export default class Dashboard extends React.Component {
 
   render() {
     return (
-      <div className="col-12 d-flex justify-content-center">
-        <div>
+      <div className="row">
+        <div className="col-1">
           <Toggle
                 id="map_resolution"
                 togglables={["States", "Counties"]}
@@ -58,8 +58,7 @@ export default class Dashboard extends React.Component {
                 onInputChange={this.handleToggleChange}
           />
         </div>
-      
-        <div>
+        <div className="col-11 mt-5">
           <Map
             data={this.state.data_on_state_level
               ? this.state.data[0]
