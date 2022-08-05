@@ -19,7 +19,7 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v3
         with:
-          context: ./basic
+          context: ./basic/
           push: true
           file: Dockerfile.prod
           tags: richardschiemenz/basic_dashboard:latest
