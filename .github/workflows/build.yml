@@ -23,6 +23,6 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: ./basic/
-          file: ./Dockerfile.prod
+          file: ./basic/Dockerfile.prod
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/basic_dashboard:latest
